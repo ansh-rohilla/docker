@@ -1,7 +1,7 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: nginx-rs
+  name: nginx-deploy
   labels:
     app: nginx
     env: demo
