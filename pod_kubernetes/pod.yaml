@@ -1,0 +1,42 @@
+# this is a comment in a YAML file
+
+# spec:
+#   containers:
+#     - name: my-container
+#       image: my-image:latest
+#       ports:
+#         - containerPort: 80
+
+# employee:
+#   name: Ansh Rohilla
+#   age: 20
+#   department: Engineering
+
+
+
+# #list example
+# fruits:
+#   - Apple
+#   - Banana
+#   - Orange    
+
+# #nested list example
+# departments:
+#   - name: Engineering
+#     employees:
+#       - name: Ansh Rohilla
+
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels:
+    environment: demo
+    type: frontend
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      ports:
+        - containerPort: 80
